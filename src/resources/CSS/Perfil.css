@@ -1,0 +1,266 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap");
+
+.perfil-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(180deg, #b3efb2, #7a9e7e);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+.infoTitulo{
+  margin-top:20px ;
+  font-weight: bolder;
+}
+.perfil-container {
+  background: #ffffffa6;
+  border: 5px solid rgba(147, 184, 189, 0.8);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  border-radius: 50px;
+  margin: 100px;
+}
+
+.perfil-form h1 {
+  text-align: center;
+  font-family: "Julius Sans One", sans-serif;
+  font-size: 30pt;
+  margin-bottom: 50px;
+}
+.tabelaInfo{
+  display: block;
+  text-align: center;
+}
+.infosUser td {
+  padding: 30px;
+  padding-left: 40px;
+  font-size: 10pt;
+  text-align: justify;
+}
+
+.infosUser td.info {
+  font-family: "Titillium Web", sans-serif;
+  color: rgb(4, 132, 141);
+}
+
+.infosUser td.infosU {
+  font-family: "Titillium Web", sans-serif;
+}
+
+.perfil-coluna span {
+  color: rgb(38, 110, 119);
+}
+
+.infosUser .btnIcon {
+  border: none;
+  background: #ffffff;
+  margin-left: 100px;
+}
+
+.perfil-coluna .editUser input {
+  padding: 4px;
+  padding-left: 10px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  border-color: rgba(69, 185, 206, 0.774);
+}
+
+.perfil-coluna .editUser button {
+  background: #00ab6b;
+  padding: 3px 10px;
+  color: #ffffff;
+  font-size: 12pt;
+  margin-left: 10px;
+  border: 1px solid #066b66;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.perfil-coluna .editUser .btnX {
+  background-color: #ffffff;
+  color: black;
+}
+
+.perfil-coluna .btnExcluir {
+  cursor: pointer;
+  background: #00ab6b;
+  padding: 5px 5px;
+  color: #fff;
+  font-size: 20px;
+  margin: 30px auto 5px auto;
+  border: 1px solid #fff;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.menu-container {
+  position: absolute;
+  top: 80px; /* Ajuste conforme necessário */
+  right: 40px; /* Ajuste conforme necessário */
+}
+
+.settings.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.settings {
+  visibility: visible;
+  transition: opacity 0.3s, visibility 0.3s;
+  position: absolute;
+  top: 100%; /* abaixo do botão */
+  left: 0; /* alinhado à esquerda do botão */
+  width: 150px;
+}
+
+.menu-button {
+  background: none;
+  border: none;
+}
+
+.listaMenu {
+  list-style: none;
+  border: 1px solid #656d6e;
+  padding: 15px 15px;
+  border-radius: 2px;
+  background-color: #cae5ec;
+}
+
+.listaMenu li {
+  margin: 5px;
+}
+
+.listaMenu li button {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #656d6e;
+  background-color: #cae5ec;
+}
+
+.user-avatar {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.perfil-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.editar-imagem {
+  margin-top: 10px;
+}
+.delete-profile-btn {
+  background-color: #ffffff; /* Vermelho */
+  border: none;
+  padding: 5px 10px; /* Menor padding para reduzir o tamanho do botão */
+  border-radius: 5px;
+  color: #000000; /* Branco */
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  margin-top: 5px; /* Adiciona uma margem em cima para distanciá-lo da foto */
+
+  /* Efeito de hover para o botão */
+  &:hover {
+    background-color: #c0392b; /* Um vermelho mais escuro */
+    color: #ffffff; /* Remove o sublinhado padrão do Bootstrap */
+  }
+}
+
+/* Em seu arquivo CSS (por exemplo, Perfil.css) */
+
+/* Em seu arquivo CSS (por exemplo, Perfil.css) */
+.btnIcon-no-bg {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.file-input-wrapper {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: #006400; /* por exemplo, cor do Bootstrap Primary Button */
+  color: white;
+  padding: 6px 10px; /* Reduzindo o padding para tornar o botão um pouco menor */
+  border-radius: 4px;
+  transition: background-color 0.3s; /* Adicionando transição para suavizar o efeito hover */
+  margin-top: 10px; /* Adicionando margem para dar espaço entre o botão e a foto */
+}
+
+
+
+
+.file-input-wrapper:hover {
+  background-color: #90ee90; /* Uma tonalidade mais escura de azul para o hover */
+}
+
+.file-input-wrapper input[type="file"] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+.file-input-wrapper-EDIT {
+  display: inline-block;
+ 
+  overflow: hidden;
+  cursor: pointer;
+  background-color:transparent;
+  padding: 2px 5px; /* Reduzindo o padding para tornar o botão um pouco menor */
+  border-radius: 4px;
+  border: 0.5px solid black;
+}
+
+
+.file-input-wrapper-EDIT input[type="file"] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.progress-bar {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.btnImg {
+  background-color: #cae5ec;
+  border: #fff;
+  color: black;
+}
+
+.btnImg:hover {
+  background-color: #fff;
+  border: #ffffff;
+  color: black;
+}

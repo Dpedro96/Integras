@@ -1,0 +1,144 @@
+@charset "utf-8";
+ @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap');
+
+.background{
+  background-image: linear-gradient(180deg, #c7f7c6, #6c9e72);
+}
+.background .img {
+    display: table;
+    width: 100%;
+    height: 100%;
+    background-position: 30% 25%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+  }
+
+  .background p{
+    color: rgb(0, 0, 0); text-shadow: 0 0 0.2em rgb(255, 255, 255);
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 20pt;
+    }
+
+  .background h2{
+    color: white; text-shadow: black 0.1em 0.1em 0.2em;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 50px;
+  }  
+  
+  .background input{
+    margin-top: 69px;
+    width: 30%!important;
+    cursor: pointer;  
+    background: #1ebb26;
+    padding: 8px 5px;
+    color: #fff;
+    font-size: 20pt;  
+    border: 1px solid #fff;   
+    margin-bottom: 10px;  
+    text-shadow: 0 2px 1px #333;
+   font-size: 20pt;
+   -webkit-transition: color .25s ease-in-out;
+   -o-transition: color .25s ease-in-out;
+   transition: color .25s ease-in-out;
+  }
+  .background input::after{
+    background-color: #000;
+    -webkit-transition: width .25s ease-in-out;
+    -o-transition: width .25s ease-in-out;
+    transition: width .25s ease-in-out;
+  }
+
+  .imge {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+/*.img1{
+  margin-bottom: 10px;
+}*/
+
+.imgCofre{
+  width: 100%;
+
+  margin-bottom: 50px;
+  margin-left: 20px;
+}
+
+.imgGastos{
+  width: 70%;
+  margin-left: 120px;
+}
+
+.imgRenda{
+  width: 90%;
+  margin-left: -50px;
+}
+
+
+.imgRelato{
+  width: 70%;
+
+}
+
+
+#gastos-section,
+#renda-section,
+#cofrinho-section,
+#relatorios-section {
+    width: 100%; /* ou o valor que você desejar */
+    padding-top: 50px;
+    padding-bottom: 50px;/* ou o valor que você desejar */
+}
+#gastos-section p,
+#renda-section p,
+#cofrinho-section p,
+#relatorios-section p{
+  margin-top: 40px;
+}
+.session-container {
+  padding-left: 50px;  /* Adiciona espaçamento na borda esquerda */
+  padding-right: 50px; /* Adiciona espaçamento na borda direita */
+}
+
+
+.barra{
+  margin-bottom: -10px;
+  padding-bottom: 50px;
+}
+
+/* Estilo padrão para telas grandes */
+.carousel-text {
+    font-size: 24pt; 
+    /* outros estilos... */
+}
+
+/* Quando a tela tiver no máximo 992px (tela média e abaixo) */
+/* Quando a tela tiver no máximo 768px (tela pequena e abaixo) */
+@media (max-width: 768px) {
+    .carousel-text h2{
+        font-size: 20pt; 
+        /* ajuste conforme necessário */
+    }
+    .carousel-text p{
+      font-size: 15pt; 
+      /* ajuste conforme necessário */
+  }
+    .carrosel{
+      height: 400px;
+    }
+    .img{
+      width: 50%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .imge{
+      height: 250px;
+      object-fit: cover;
+    }
+}
+
+/* Quando a tela tiver no máximo 576px (telas muito pequenas) */
