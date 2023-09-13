@@ -103,7 +103,7 @@ function Login() {
               </p>
               <p className="link_l">
                 Ainda não tem conta?{" "}
-                <Link to="/Cadastro">
+                <Link className="login-button" to="/Cadastro">
                   <span>Cadastre-se</span>
                 </Link>
               </p>

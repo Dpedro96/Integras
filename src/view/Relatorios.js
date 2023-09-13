@@ -191,12 +191,12 @@ function Relatorios() {
                     ))}
                 </div>
 
-                <div className="gastos-info">
+                <div className="gastos-info gastos-tabela-wrapper">
                     <h2>Informações de Gastos</h2>
 
                     <table className="gastos-tabela">
                         <thead>
-                            <tr>
+                            <tr className='ABB'>
                                 <th>Título</th>
                                 <th>Tipo de Gasto</th>
                                 <th>Valor</th>

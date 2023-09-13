@@ -77,12 +77,47 @@
   width: 90%;
   margin-left: -50px;
 }
+/* Estilo para o botão personalizado */
+.btn-custom {
+  background-color: #0e0f0f;
+  color: #fff;
+  border: none;
+  padding: 11px 22px;
+  border-radius: 300px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 28px;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  margin-top: 10px; /* Ajuste o espaço superior conforme necessário */
+}
+
+.btn-custom:hover {
+  background-color: hsl(154, 36%, 33%);
+}
 
 
 .imgRelato{
   width: 70%;
 
 }
+.info-btn {
+  background-color: #A8E6CF; /* Cor de fundo desejada */
+  border: none;
+  border-radius: 5px;
+  color: white; /* Cor do texto */
+  padding: 10px 15px;
+  transition: background-color 0.3s ease-in-out;
+  display: block; /* Para centralizar o botão */
+  margin: 0 auto; /* Para centralizar o botão */
+}
+
+.info-btn:hover {
+  background-color: #96D6B9; /* Cor de fundo desejada no hover */
+  color: white;
+}
+
+
 
 
 #gastos-section,

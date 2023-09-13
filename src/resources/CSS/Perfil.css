@@ -28,6 +28,17 @@
   border-radius: 50px;
   margin: 100px;
 }
+/* Estilos para o texto de perfil em preto */
+.infosUser td {
+  padding: 30px;
+  padding-left: 40px;
+  font-size: 10pt;
+  text-align: justify;
+  color: black !important; /* Adicione !important para forçar a cor do texto como preto */
+}
+
+
+
 
 .perfil-form h1 {
   text-align: center;
@@ -46,17 +57,8 @@
   text-align: justify;
 }
 
-.infosUser td.info {
-  font-family: "Titillium Web", sans-serif;
-  color: rgb(4, 132, 141);
-}
-
-.infosUser td.infosU {
-  font-family: "Titillium Web", sans-serif;
-}
-
 .perfil-coluna span {
-  color: rgb(38, 110, 119);
+  color: rgb(0, 0, 0);
 }
 
 .infosUser .btnIcon {
@@ -70,7 +72,7 @@
   padding-left: 10px;
   background-color: #ffffff;
   border-radius: 2px;
-  border-color: rgba(69, 185, 206, 0.774);
+  border-color: rgba(0, 0, 0, 0.774);
 }
 
 .perfil-coluna .editUser button {
@@ -128,7 +130,7 @@
 
 .listaMenu {
   list-style: none;
-  border: 1px solid #656d6e;
+  border: 1px solid #000000;
   padding: 15px 15px;
   border-radius: 2px;
   background-color: #cae5ec;
@@ -263,4 +265,25 @@
   background-color: #fff;
   border: #ffffff;
   color: black;
+}
+
+@media (max-width: 767px) {
+  .perfil-container{
+    width: 350px;
+  }
+  div.perfil-container h1{
+      font-size: 25pt;
+  }
+  .perfil-container label{
+    font-size: 12pt;
+  }
+  .perfil-container input[type="submit"]{
+    font-size: 13pt;   
+  }
+  .perfil-container input:not([type="radio"]){
+    padding: 8px;    
+  }
+  .perfil-container fieldset{
+    font-size: 14pt;
+  }
 }

@@ -141,26 +141,7 @@ border-top: 1px solid #dbe5e8;
 border-radius: 0 0  5px 5px;
 }
 
-.containerr span{
-font-weight: bold;
-background: #dbe5e8;
-padding: 6px;
-color: #1ebb26;
-margin-left: 10px;
-border: 1px solid rgb(44, 248, 78); 
-text-decoration:  underline;
-text-decoration-color: #dbe5e8;
--webkit-border-radius: 4px;
-border-radius: 4px;  
 
--webkit-transition: all 0.4s linear;
-transition: all 0.4s  linear;
-}
-.containerr span:hover{
-color:rgba(68, 243, 68, 0.616);
-background: #f7f7f7;
-border: 1px solid #1ebb26;
-}
 
 .login{
 position: absolute;
@@ -203,6 +184,33 @@ animation-duration: 0.5s;
 animation-timing-function: ease;
 animation-fill-mode: both;
 }
+
+
+/* Estilos para o botão de login */
+.login-button {
+  width: 65%!important;
+  cursor: pointer;  
+  background: #1ebb26;
+  padding: 4px 4px;
+  color: #fff;
+  font-size: 15px;  
+  border: 1px solid #fff;   
+  margin-top: 5px;
+  margin-bottom: 10px;  
+  text-shadow: 0 1px 1px #333;
+ 
+  
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  
+  transition: all 0.2s linear;
+  }
+
+/* Estilos quando o botão é hover (passar o mouse por cima) */
+.login-button:hover {
+  background: #2ae904;
+}
+
 
 /*fadeInLeft*/
 @-webkit-keyframes fadeInLeft {
@@ -247,5 +255,26 @@ animation-fill-mode: both;
   100% {
     opacity: 0;
     transform: translateX(-20px);
+  }
+}
+
+@media (max-width: 767px) {
+  .contente_login, .contente_cadastro{
+    width: 350px;
+  }
+  .containerr h2{
+      font-size: 23pt;
+  }
+  .contente_login label{
+    font-size: 12pt;
+  }
+  .containerr input:not([type="checkbox"]){
+    padding: 3px;    
+  }
+  .link_c{
+    min-width: 306px;
+  }
+  .link_l{
+    width: 308px;
   }
 }

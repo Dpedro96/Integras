@@ -1,6 +1,6 @@
 import '../../resources/CSS/Cabecalh.css'
 import {Link} from 'react-router-dom';
-import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
+import { Container, Nav, Navbar } from "react-bootstrap";
 import logo from "../../resources/img/logo.png";
 
 function Cabecalho() {

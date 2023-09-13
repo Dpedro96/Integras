@@ -110,7 +110,6 @@ progress::before {
 }
 
 .delete-button {
-  position: absolute;
   top: 5px;
   right: 10px;
   color: red;
@@ -119,4 +118,67 @@ progress::before {
 
 .backgroundGrafico{
   background-color: rgba(255, 255, 255, 0.3);
+}
+/* Estilização básica da tabela */
+.gastos-tabela {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.gastos-tabela th,
+.gastos-tabela td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.gastos-tabela th {
+  background-color: #f2f2f2;
+}
+
+/* Estilo para o botão de exclusão */
+.delete-button {
+  background-color: #ff5555;
+  color: #fff;
+  padding: 1px 1px 1px 1px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+  background-color: #ff0000;
+}
+
+/* Estilização para ícones FontAwesome, se estiverem sendo usados */
+.delete-button .fa-trash {
+  margin-right: 2px;
+}
+
+.gastos-tabela-wrapper {
+  overflow-x: auto;
+}
+
+@media (max-width: 767px) {
+  .gastos-info, .cofrinho-info, .conta-corrente-info {
+    width: calc(50%);
+    padding: 10px;
+  }
+
+  .gastos-info, .cofrinho-info, .conta-corrente-info {
+    width: 100%;
+    padding: 10px;
+}
+
+.gastos-tabela {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.gastos-tabela th, .gastos-tabela td {
+    padding: 5px 10px;
+    text-align: left;
+}
+  
 }

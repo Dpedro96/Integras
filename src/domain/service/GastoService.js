@@ -3,18 +3,24 @@ import { deleteGastoRepository} from '../repository/GastoRepository';
 
 
 export async function saveGasto(gastoDTO, user) {
-    if (!user.email) {
+    if (!user.email || !user.uid) {
         throw new Error("Informações do usuário estão incompletas ou não fornecidas.");
     }
-const existingGasto = await findGastoByTitulo(gastoDTO.titulo, user.uid);
 
-if (existingGasto) {
-    throw new Error("Você já possui um gasto com o mesmo título.");
-}
+    // Verifica se já existe um gasto com o mesmo título
+    const existingGasto = await findGastoByTitulo(user.uid, gastoDTO.titulo);
+
+    
+    if (existingGasto) {
+        throw new Error("Você já possui um gasto com o mesmo título.");
+    }
+
     const data = {
         ...gastoDTO,
         email: user.email,
+        userId: user.uid, // Adicione o ID do usuário ao gasto
     };
+    
     return await createGasto(data);
 }
 

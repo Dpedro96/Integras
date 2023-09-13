@@ -167,7 +167,7 @@ function Perfil() {
             <table className="tabelaInfo">
               <tbody className="infosUser">
                 <tr>
-                  <td className="info">NOME</td>
+                  <td className="infow">NOME</td>
                   <td className="infosU">
                     {editingField === "name" ? (
                       <input

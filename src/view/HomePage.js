@@ -8,29 +8,37 @@ import imgCofrinho from "../resources/img/WhatsApp_Image_2023-08-20_at_16.51.58_
 import imgRenda from "../resources/img/WhatsApp_Image_2023-08-20_at_17.08.13-removebg-preview.png";
 import imgGastos from "../resources/img/WhatsApp_Image_2023-08-20_at_21.18.55-removebg-preview.png";
 import { Carousel, Card, Button, Image } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 function HomePage() {
   return (
     <section className="background">
-      <Carousel >
+      <Carousel>
         <Carousel.Item className="carrosel">
           <img src={i1} alt="First slide" className="img" />
           <Carousel.Caption>
             <div className="carousel-text">
               <h2>Controle Total</h2>
               <p>
-                Com o PoupAqui você consegue controlar seus gastos de maneira
-                muita mais eficeiente e organizada
+                Com o PoupAqui você consegue controlar seus gastos de maneira muito mais eficiente e organizada
               </p>
+              {/* Adicione o botão personalizado com o Link */}
+              <Link to="/cadastro" className="btn-custom">
+                Comece Agora!
+              </Link>
             </div>
           </Carousel.Caption>
-        </Carousel.Item >
+        </Carousel.Item>
         <Carousel.Item className="carrosel">
           <img src={i3} alt="First slide" className="img" />
           <Carousel.Caption>
             <div className="carousel-text">
               <h2>Maior Praticidade</h2>
               <p>Controle suas contas de um jeito muito mais no confortavel</p>
+              {/* Adicione o botão personalizado com o Link */}
+              <Link to="/cadastro" className="btn-custom">
+                Comece Agora!
+              </Link>
             </div>
           </Carousel.Caption>
         </Carousel.Item>
@@ -40,9 +48,12 @@ function HomePage() {
             <div className="carousel-text">
               <h2>Sem Sofrimento</h2>
               <p>
-                Junte-se a nós e faça o seus controle financeiro de forma facil
-                e pratica
+                Junte-se a nós e faça o seus controle financeiro de forma facil e pratica
               </p>
+              {/* Adicione o botão personalizado com o Link */}
+              <Link to="/cadastro" className="btn-custom">
+                Comece Agora!
+              </Link>
             </div>
           </Carousel.Caption>
         </Carousel.Item>
@@ -52,6 +63,10 @@ function HomePage() {
             <div className="carousel-text">
               <h2>Gestão Conciente</h2>
               <p>Faça seus planejamentos futuros de uma forma inovadora</p>
+              {/* Adicione o botão personalizado com o Link */}
+              <Link to="/cadastro" className="btn-custom">
+                Comece Agora!
+              </Link>
             </div>
           </Carousel.Caption>
         </Carousel.Item>
@@ -66,8 +81,8 @@ function HomePage() {
                 <Card.Text>
                   Gerencie seus gastos de forma simples e fácil.
                 </Card.Text>
-                <Button variant="primary" href="#gastos-section">
-                  Go somewhere
+                <Button variant="primary" href="#gastos-section" style={{ backgroundColor: '#4CAF50', borderRadius: '50px', color: 'white' }}>
+                  Informações
                 </Button>
               </Card.Body>
             </Card>
@@ -78,10 +93,10 @@ function HomePage() {
               <Card.Body>
                 <Card.Title>Renda</Card.Title>
                 <Card.Text>
-                  Gerencie seus gastos de forma simples e fácila
+                  Gerencie sua renda de forma mais simples e fácil.
                 </Card.Text>
-                <Button variant="primary" href="#renda-section">
-                  Go somewhere
+                <Button variant="primary" href="#gastos-section" style={{ backgroundColor: '#4CAF50', borderRadius: '50px', color: 'white' }}>
+                  Informações
                 </Button>
               </Card.Body>
             </Card>
@@ -92,10 +107,10 @@ function HomePage() {
               <Card.Body>
                 <Card.Title>Cofrinho</Card.Title>
                 <Card.Text>
-                  Gerencie seus gastos de forma simples e fácila
+                  Gerencie seu cofrinho de forma simples e fácil.
                 </Card.Text>
-                <Button variant="primary" href="#cofrinho-section">
-                  Go somewhere
+                <Button variant="primary" href="#gastos-section" style={{ backgroundColor: '#4CAF50', borderRadius: '50px', color: 'white' }}>
+                  Informações
                 </Button>
               </Card.Body>
             </Card>
@@ -106,10 +121,10 @@ function HomePage() {
               <Card.Body>
                 <Card.Title>Relatorio</Card.Title>
                 <Card.Text>
-                  Gerencie seus gastos de forma simples e fácila
+                  Visualize seus gastos, renda e progressos
                 </Card.Text>
-                <Button variant="primary" href="#relatorios-section">
-                  Go somewhere
+                <Button variant="primary" href="#gastos-section" style={{ backgroundColor: '#4CAF50', borderRadius: '50px', color: 'white' }}>
+                  Informações
                 </Button>
               </Card.Body>
             </Card>
